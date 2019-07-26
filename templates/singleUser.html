@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-{% for blogPost in blogPosts %}
+
 <h1>{{blogPost.title}}</h1>
 <p>{{blogPost.body}}</p>
 <p>Written by: <a href="/blog?user={{blogPost.owner_id}}">{{blogPost.owner.username}}</a></p>
-{% endfor %}
+
 {% endblock %}
